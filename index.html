@@ -442,7 +442,7 @@ Smartphone Compatible for Nokia, Samsung, LG, SonyEricsson, Motorola Event Plann
 			<h3 data-aos="zoom-in" >Contact Us</h3>
 				<p>Your questions and comments are important to us.
 				 We would be happy to answer your questions and set up a meeting with you,Pictorial tower can help set you apart from the flock!.</p>
-			<form action="" method="POST">
+			<form name="contact" method="POST" data-netlify="true">
 					<div class="col-md-6 agileits_agile_about_mail_left">
 						<input type="text" name="name" placeholder="Name" required="">
 						<input type="text" name="company" placeholder="Company Name" required="">
@@ -453,6 +453,8 @@ Smartphone Compatible for Nokia, Samsung, LG, SonyEricsson, Motorola Event Plann
 					</div>
 				<div class="clearfix"> </div>
 				<textarea name="msg" placeholder="Message..." required=""></textarea>
+				<div data-netlify-recaptcha="true">				
+				</div>
 				<input type="submit" value="Submit">
 			</form>
   
@@ -532,8 +534,6 @@ Smartphone Compatible for Nokia, Samsung, LG, SonyEricsson, Motorola Event Plann
 					});
 				})();
 			</script>
-<!-- //Gallery-Tab-JavaScript -->
-	<!-- Swipe-Box-JavaScript -->
 			<script src="js/jquery.swipebox.min.js"></script> 
 				<script type="text/javascript">
 					jQuery(function($) {
@@ -559,16 +559,7 @@ Smartphone Compatible for Nokia, Samsung, LG, SonyEricsson, Motorola Event Plann
 	<script type="text/javascript" src="js/easing.js"></script>
 	<!-- here stars scrolling script -->
 	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
+		$(document).ready(function() {				
 			$().UItoTop({ easingType: 'easeOutQuart' });
 								
 			});
