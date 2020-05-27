@@ -1,2 +1,2 @@
-# pictorial_models
+# Pictorial_Models
 Modelling 
